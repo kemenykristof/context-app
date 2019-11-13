@@ -6,9 +6,9 @@ class BookList extends Component {
     return (
       <ThemeContext.Consumer>
         {context => {
-          const { isLight, light, dark } = context;
+          const { isLightTheme, light, dark } = context;
 
-          const theme = isLight ? light : dark;
+          const theme = isLightTheme ? light : dark;
 
           return (
             <div
